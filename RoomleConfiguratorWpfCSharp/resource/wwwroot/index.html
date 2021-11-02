@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #configurator-container {
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="configurator-container"></div>
+    <script src="./roomle-configurator-api.es.min.js" type="module"></script>
+    <script type="module">
+        import RoomleConfiguratorApi from './roomle-configurator-api.es.min.js';
+        (async () => {
+            const options = {
+                id: 'usm:frame',
+            };
+            const configurator = await RoomleConfiguratorApi.create(
+                'demoConfigurator',
+                document.getElementById('configurator-container'),
+                options,
+            );
+
+            window.chrome.webview.addEventListener('message', arg => {
+                console.log(arg);
+                if (arg.data.width) {
+                    configurator.extended.setParameterOfRootComponent({ "key": "width" }, arg.data.width.toString());
+                }
+                if (arg.data.height) {
+                    configurator.extended.setParameterOfRootComponent({ "key": "height" }, arg.data.height.toString());
+                }
+            });
+
+            /*async () => {
+                const params = await configurator.extended.getParametersOfRootComponent();
+            }*/
+        })();
+    </script>
+</body>
+</html>

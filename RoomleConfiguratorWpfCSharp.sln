@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomleConfiguratorWpfCSharp", "RoomleConfiguratorWpfCSharp\RoomleConfiguratorWpfCSharp.csproj", "{E5E0B33E-9776-46E6-ADE3-73E7CCBA2DA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5E0B33E-9776-46E6-ADE3-73E7CCBA2DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E0B33E-9776-46E6-ADE3-73E7CCBA2DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E0B33E-9776-46E6-ADE3-73E7CCBA2DA5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5E0B33E-9776-46E6-ADE3-73E7CCBA2DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E0B33E-9776-46E6-ADE3-73E7CCBA2DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E0B33E-9776-46E6-ADE3-73E7CCBA2DA5}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C99D3F7-8D31-4A86-9CB8-0D16A7A98459}
+	EndGlobalSection
+EndGlobal

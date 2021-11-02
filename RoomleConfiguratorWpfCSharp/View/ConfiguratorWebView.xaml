@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:ViewModel="clr-namespace:RoomleConfiguratorWpfCSharp.ViewModel"
+        x:Class="RoomleConfiguratorWpfCSharp.View.ConfiguratorWebView"
+        mc:Ignorable="d"
+        Title="Roomle - Rubens Configurator" 
+        Width="1600"
+        Height="900"
+        Icon="pack://application:,,,/resource/roomle.ico">
+    <Window.DataContext>
+        <ViewModel:ConfiguratorViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Slider Grid.Row="0" x:Name="widthSlider"
+                Width="200" Height="30" HorizontalAlignment="left" 
+                Value="700" Minimum="350" Maximum="700" ToolTip="Width"
+                ValueChanged="WidthValueChanged"/>
+        <Slider Grid.Row="1" x:Name="heightSlider"
+                Width="200" Height="30" HorizontalAlignment="left" 
+                Value="350" Minimum="100" Maximum="500" ToolTip="Height"
+                ValueChanged="HeightValueChanged"/>
+        <DockPanel Grid.Row="2">
+            <Wpf:WebView2 x:Name="configuratorWebView"/>
+        </DockPanel>
+    </Grid>
+</Window>
