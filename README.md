@@ -65,3 +65,6 @@ npm i @roomle/embedding-lib
 
     [CoreWebView2.PostWebMessageAsJson](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson?view=webview2-dotnet-1.0.1056-prerelease) posts the specified webMessageAsJson to the top level document in this WebView.  
     [CoreWebView2.PostWebMessageAsString](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasstring?view=webview2-dotnet-1.0.1056-prerelease) posts a message that is a simple String rather than a JSON string representation of a JavaScript object.
+
+
+![rubens example](resource/roomle_wpf.gif)
